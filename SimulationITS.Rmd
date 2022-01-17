@@ -2412,8 +2412,7 @@ confint(S1S20E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS20E20AGGM3<-subset(S1PhaseInS20E20AGG,x<100|x>=120)
-S1PhaseInS20E20AGGM3$x<-S1PhaseInS20E20AGGM3$x-((S1PhaseInS20E20AGGM3$x)>100)*20
+S1PhaseInS20E20AGGM3<-subset(S1PhaseInS20E20AGG,x<100|x>120)
 
 S1PhaseInS20E20AGGM3$intervention = S1PhaseInS20E20AGGM3$x > 100
 S1PhaseInS20E20AGGM3$time_after_intervention = ifelse(S1PhaseInS20E20AGGM3$x > 100, S1PhaseInS20E20AGGM3$x - 100, 0)
@@ -2427,7 +2426,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS20E20AGGM4<-subset(S1PhaseInS20E20AGG,x<=100|x>=120)
 S1PhaseInS20E20AGGM4<-rbind(S1PhaseInS20E20AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS20E20AGGM4$intervention = S1PhaseInS20E20AGGM4$x > 120
+S1PhaseInS20E20AGGM4$intervention = S1PhaseInS20E20AGGM4$x > 119
 S1PhaseInS20E20AGGM4$time_after_intervention = ifelse(S1PhaseInS20E20AGGM4$x > 120, S1PhaseInS20E20AGGM4$x - 120, 0)
 S1S20E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS20E20AGGM4)
 summary(S1S20E20M4)
@@ -2469,8 +2468,7 @@ confint(S1S20E50M2)
 
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS20E50AGGM3<-subset(S1PhaseInS20E50AGG,x<100|x>=120)
-S1PhaseInS20E50AGGM3$x<-S1PhaseInS20E50AGGM3$x-((S1PhaseInS20E50AGGM3$x)>100)*20
+S1PhaseInS20E50AGGM3<-subset(S1PhaseInS20E50AGG,x<100|x>120)
 
 S1PhaseInS20E50AGGM3$intervention = S1PhaseInS20E50AGGM3$x > 100
 S1PhaseInS20E50AGGM3$time_after_intervention = ifelse(S1PhaseInS20E50AGGM3$x > 100, S1PhaseInS20E50AGGM3$x - 100, 0)
@@ -2484,7 +2482,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS20E50AGGM4<-subset(S1PhaseInS20E50AGG,x<=100|x>=120)
 S1PhaseInS20E50AGGM4<-rbind(S1PhaseInS20E50AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS20E50AGGM4$intervention = S1PhaseInS20E50AGGM4$x > 120
+S1PhaseInS20E50AGGM4$intervention = S1PhaseInS20E50AGGM4$x > 119
 S1PhaseInS20E50AGGM4$time_after_intervention = ifelse(S1PhaseInS20E50AGGM4$x > 120, S1PhaseInS20E50AGGM4$x - 120, 0)
 S1S20E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS20E50AGGM4)
 summary(S1S20E50M4)
@@ -2525,8 +2523,7 @@ confint(S1S20E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS20E100AGGM3<-subset(S1PhaseInS20E100AGG,x<100|x>=120)
-S1PhaseInS20E100AGGM3$x<-S1PhaseInS20E100AGGM3$x-((S1PhaseInS20E100AGGM3$x)>100)*20
+S1PhaseInS20E100AGGM3<-subset(S1PhaseInS20E100AGG,x<100|x>120)
 
 S1PhaseInS20E100AGGM3$intervention = S1PhaseInS20E100AGGM3$x > 100
 S1PhaseInS20E100AGGM3$time_after_intervention = ifelse(S1PhaseInS20E100AGGM3$x > 100, S1PhaseInS20E100AGGM3$x - 100, 0)
@@ -2540,7 +2537,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS20E100AGGM4<-subset(S1PhaseInS20E100AGG,x<=100|x>=120)
 S1PhaseInS20E100AGGM4<-rbind(S1PhaseInS20E100AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS20E100AGGM4$intervention = S1PhaseInS20E100AGGM4$x > 120
+S1PhaseInS20E100AGGM4$intervention = S1PhaseInS20E100AGGM4$x > 119
 S1PhaseInS20E100AGGM4$time_after_intervention = ifelse(S1PhaseInS20E100AGGM4$x > 120, S1PhaseInS20E100AGGM4$x - 120, 0)
 S1S20E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS20E100AGGM4)
 summary(S1S20E100M4)
@@ -2580,8 +2577,7 @@ confint(S1S100E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS100E20AGGM3<-subset(S1PhaseInS100E20AGG,x<100|x>=120)
-S1PhaseInS100E20AGGM3$x<-S1PhaseInS100E20AGGM3$x-((S1PhaseInS100E20AGGM3$x)>100)*20
+S1PhaseInS100E20AGGM3<-subset(S1PhaseInS100E20AGG,x<100|x>120)
 
 S1PhaseInS100E20AGGM3$intervention = S1PhaseInS100E20AGGM3$x > 100
 S1PhaseInS100E20AGGM3$time_after_intervention = ifelse(S1PhaseInS100E20AGGM3$x > 100, S1PhaseInS100E20AGGM3$x - 100, 0)
@@ -2595,7 +2591,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS100E20AGGM4<-subset(S1PhaseInS100E20AGG,x<=100|x>=120)
 S1PhaseInS100E20AGGM4<-rbind(S1PhaseInS100E20AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS100E20AGGM4$intervention = S1PhaseInS100E20AGGM4$x > 120
+S1PhaseInS100E20AGGM4$intervention = S1PhaseInS100E20AGGM4$x > 119
 S1PhaseInS100E20AGGM4$time_after_intervention = ifelse(S1PhaseInS100E20AGGM4$x > 120, S1PhaseInS100E20AGGM4$x - 120, 0)
 S1S100E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS100E20AGGM4)
 summary(S1S100E20M4)
@@ -2635,8 +2631,7 @@ confint(S1S100E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS100E50AGGM3<-subset(S1PhaseInS100E50AGG,x<100|x>=120)
-S1PhaseInS100E50AGGM3$x<-S1PhaseInS100E50AGGM3$x-((S1PhaseInS100E50AGGM3$x)>100)*20
+S1PhaseInS100E50AGGM3<-subset(S1PhaseInS100E50AGG,x<100|x>120)
 
 S1PhaseInS100E50AGGM3$intervention = S1PhaseInS100E50AGGM3$x > 100
 S1PhaseInS100E50AGGM3$time_after_intervention = ifelse(S1PhaseInS100E50AGGM3$x > 100, S1PhaseInS100E50AGGM3$x - 100, 0)
@@ -2650,7 +2645,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS100E50AGGM4<-subset(S1PhaseInS100E50AGG,x<=100|x>=120)
 S1PhaseInS100E50AGGM4<-rbind(S1PhaseInS100E50AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS100E50AGGM4$intervention = S1PhaseInS100E50AGGM4$x > 120
+S1PhaseInS100E50AGGM4$intervention = S1PhaseInS100E50AGGM4$x > 119
 S1PhaseInS100E50AGGM4$time_after_intervention = ifelse(S1PhaseInS100E50AGGM4$x > 120, S1PhaseInS100E50AGGM4$x - 120, 0)
 S1S100E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS100E50AGGM4)
 summary(S1S100E50M4)
@@ -2690,8 +2685,7 @@ confint(S1S100E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS100E100AGGM3<-subset(S1PhaseInS100E100AGG,x<100|x>=120)
-S1PhaseInS100E100AGGM3$x<-S1PhaseInS100E100AGGM3$x-((S1PhaseInS100E100AGGM3$x)>100)*20
+S1PhaseInS100E100AGGM3<-subset(S1PhaseInS100E100AGG,x<100|x>120)
 
 S1PhaseInS100E100AGGM3$intervention = S1PhaseInS100E100AGGM3$x > 100
 S1PhaseInS100E100AGGM3$time_after_intervention = ifelse(S1PhaseInS100E100AGGM3$x > 100, S1PhaseInS100E100AGGM3$x - 100, 0)
@@ -2705,7 +2699,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS100E100AGGM4<-subset(S1PhaseInS100E100AGG,x<=100|x>=120)
 S1PhaseInS100E100AGGM4<-rbind(S1PhaseInS100E100AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS100E100AGGM4$intervention = S1PhaseInS100E100AGGM4$x > 120
+S1PhaseInS100E100AGGM4$intervention = S1PhaseInS100E100AGGM4$x > 119
 S1PhaseInS100E100AGGM4$time_after_intervention = ifelse(S1PhaseInS100E100AGGM4$x > 120, S1PhaseInS100E100AGGM4$x - 120, 0)
 S1S100E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS100E100AGGM4)
 summary(S1S100E100M4)
@@ -2745,8 +2739,7 @@ confint(S1S1000E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS1000E20AGGM3<-subset(S1PhaseInS1000E20AGG,x<100|x>=120)
-S1PhaseInS1000E20AGGM3$x<-S1PhaseInS1000E20AGGM3$x-((S1PhaseInS1000E20AGGM3$x)>100)*20
+S1PhaseInS1000E20AGGM3<-subset(S1PhaseInS1000E20AGG,x<100|x>120)
 
 S1PhaseInS1000E20AGGM3$intervention = S1PhaseInS1000E20AGGM3$x > 100
 S1PhaseInS1000E20AGGM3$time_after_intervention = ifelse(S1PhaseInS1000E20AGGM3$x > 100, S1PhaseInS1000E20AGGM3$x - 100, 0)
@@ -2760,7 +2753,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS1000E20AGGM4<-subset(S1PhaseInS1000E20AGG,x<=100|x>=120)
 S1PhaseInS1000E20AGGM4<-rbind(S1PhaseInS1000E20AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS1000E20AGGM4$intervention = S1PhaseInS1000E20AGGM4$x > 120
+S1PhaseInS1000E20AGGM4$intervention = S1PhaseInS1000E20AGGM4$x > 119
 S1PhaseInS1000E20AGGM4$time_after_intervention = ifelse(S1PhaseInS1000E20AGGM4$x > 120, S1PhaseInS1000E20AGGM4$x - 120, 0)
 S1S1000E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS1000E20AGGM4)
 summary(S1S1000E20M4)
@@ -2800,8 +2793,7 @@ confint(S1S1000E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS1000E50AGGM3<-subset(S1PhaseInS1000E50AGG,x<100|x>=120)
-S1PhaseInS1000E50AGGM3$x<-S1PhaseInS1000E50AGGM3$x-((S1PhaseInS1000E50AGGM3$x)>100)*20
+S1PhaseInS1000E50AGGM3<-subset(S1PhaseInS1000E50AGG,x<100|x>120)
 
 S1PhaseInS1000E50AGGM3$intervention = S1PhaseInS1000E50AGGM3$x > 100
 S1PhaseInS1000E50AGGM3$time_after_intervention = ifelse(S1PhaseInS1000E50AGGM3$x > 100, S1PhaseInS1000E50AGGM3$x - 100, 0)
@@ -2815,7 +2807,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS1000E50AGGM4<-subset(S1PhaseInS1000E50AGG,x<=100|x>=120)
 S1PhaseInS1000E50AGGM4<-rbind(S1PhaseInS1000E50AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS1000E50AGGM4$intervention = S1PhaseInS1000E50AGGM4$x > 120
+S1PhaseInS1000E50AGGM4$intervention = S1PhaseInS1000E50AGGM4$x > 119
 S1PhaseInS1000E50AGGM4$time_after_intervention = ifelse(S1PhaseInS1000E50AGGM4$x > 120, S1PhaseInS1000E50AGGM4$x - 120, 0)
 S1S1000E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS1000E50AGGM4)
 summary(S1S1000E50M4)
@@ -2856,8 +2848,7 @@ confint(S1S1000E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S1PhaseInS1000E100AGGM3<-subset(S1PhaseInS1000E100AGG,x<100|x>=120)
-S1PhaseInS1000E100AGGM3$x<-S1PhaseInS1000E100AGGM3$x-((S1PhaseInS1000E100AGGM3$x)>100)*20
+S1PhaseInS1000E100AGGM3<-subset(S1PhaseInS1000E100AGG,x<100|x>120)
 
 S1PhaseInS1000E100AGGM3$intervention = S1PhaseInS1000E100AGGM3$x > 100
 S1PhaseInS1000E100AGGM3$time_after_intervention = ifelse(S1PhaseInS1000E100AGGM3$x > 100, S1PhaseInS1000E100AGGM3$x - 100, 0)
@@ -2871,7 +2862,7 @@ Model 4: Counterfactual from Before
 S1PhaseInS1000E100AGGM4<-subset(S1PhaseInS1000E100AGG,x<=100|x>=120)
 S1PhaseInS1000E100AGGM4<-rbind(S1PhaseInS1000E100AGGM4,S1CounterfactualBefore)
 
-S1PhaseInS1000E100AGGM4$intervention = S1PhaseInS1000E100AGGM4$x > 120
+S1PhaseInS1000E100AGGM4$intervention = S1PhaseInS1000E100AGGM4$x > 119
 S1PhaseInS1000E100AGGM4$time_after_intervention = ifelse(S1PhaseInS1000E100AGGM4$x > 120, S1PhaseInS1000E100AGGM4$x - 120, 0)
 S1S1000E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S1PhaseInS1000E100AGGM4)
 summary(S1S1000E100M4)
@@ -2913,8 +2904,7 @@ confint(S2S20E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS20E20AGGM3<-subset(S2PhaseInS20E20AGG,x<100|x>=120)
-S2PhaseInS20E20AGGM3$x<-S2PhaseInS20E20AGGM3$x-((S2PhaseInS20E20AGGM3$x)>100)*20
+S2PhaseInS20E20AGGM3<-subset(S2PhaseInS20E20AGG,x<100|x>120)
 
 S2PhaseInS20E20AGGM3$intervention = S2PhaseInS20E20AGGM3$x > 100
 S2PhaseInS20E20AGGM3$time_after_intervention = ifelse(S2PhaseInS20E20AGGM3$x > 100, S2PhaseInS20E20AGGM3$x - 100, 0)
@@ -2928,7 +2918,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS20E20AGGM4<-subset(S2PhaseInS20E20AGG,x<=100|x>=120)
 S2PhaseInS20E20AGGM4<-rbind(S2PhaseInS20E20AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS20E20AGGM4$intervention = S2PhaseInS20E20AGGM4$x > 120
+S2PhaseInS20E20AGGM4$intervention = S2PhaseInS20E20AGGM4$x > 119
 S2PhaseInS20E20AGGM4$time_after_intervention = ifelse(S2PhaseInS20E20AGGM4$x > 120, S2PhaseInS20E20AGGM4$x - 120, 0)
 S2S20E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS20E20AGGM4)
 summary(S2S20E20M4)
@@ -2968,8 +2958,7 @@ confint(S2S20E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS20E50AGGM3<-subset(S2PhaseInS20E50AGG,x<100|x>=120)
-S2PhaseInS20E50AGGM3$x<-S2PhaseInS20E50AGGM3$x-((S2PhaseInS20E50AGGM3$x)>100)*20
+S2PhaseInS20E50AGGM3<-subset(S2PhaseInS20E50AGG,x<100|x>120)
 
 S2PhaseInS20E50AGGM3$intervention = S2PhaseInS20E50AGGM3$x > 100
 S2PhaseInS20E50AGGM3$time_after_intervention = ifelse(S2PhaseInS20E50AGGM3$x > 100, S2PhaseInS20E50AGGM3$x - 100, 0)
@@ -2983,7 +2972,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS20E50AGGM4<-subset(S2PhaseInS20E50AGG,x<=100|x>=120)
 S2PhaseInS20E50AGGM4<-rbind(S2PhaseInS20E50AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS20E50AGGM4$intervention = S2PhaseInS20E50AGGM4$x > 120
+S2PhaseInS20E50AGGM4$intervention = S2PhaseInS20E50AGGM4$x > 119
 S2PhaseInS20E50AGGM4$time_after_intervention = ifelse(S2PhaseInS20E50AGGM4$x > 120, S2PhaseInS20E50AGGM4$x - 120, 0)
 S2S20E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS20E50AGGM4)
 summary(S2S20E50M4)
@@ -3024,8 +3013,7 @@ confint(S2S20E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS20E100AGGM3<-subset(S2PhaseInS20E100AGG,x<100|x>=120)
-S2PhaseInS20E100AGGM3$x<-S2PhaseInS20E100AGGM3$x-((S2PhaseInS20E100AGGM3$x)>100)*20
+S2PhaseInS20E100AGGM3<-subset(S2PhaseInS20E100AGG,x<100|x>120)
 
 S2PhaseInS20E100AGGM3$intervention = S2PhaseInS20E100AGGM3$x > 100
 S2PhaseInS20E100AGGM3$time_after_intervention = ifelse(S2PhaseInS20E100AGGM3$x > 100, S2PhaseInS20E100AGGM3$x - 100, 0)
@@ -3039,7 +3027,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS20E100AGGM4<-subset(S2PhaseInS20E100AGG,x<=100|x>=120)
 S2PhaseInS20E100AGGM4<-rbind(S2PhaseInS20E100AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS20E100AGGM4$intervention = S2PhaseInS20E100AGGM4$x > 120
+S2PhaseInS20E100AGGM4$intervention = S2PhaseInS20E100AGGM4$x > 119
 S2PhaseInS20E100AGGM4$time_after_intervention = ifelse(S2PhaseInS20E100AGGM4$x > 120, S2PhaseInS20E100AGGM4$x - 120, 0)
 S2S20E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS20E100AGGM4)
 summary(S2S20E100M4)
@@ -3081,8 +3069,7 @@ confint(S2S100E20M2)
 
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS100E20AGGM3<-subset(S2PhaseInS100E20AGG,x<100|x>=120)
-S2PhaseInS100E20AGGM3$x<-S2PhaseInS100E20AGGM3$x-((S2PhaseInS100E20AGGM3$x)>100)*20
+S2PhaseInS100E20AGGM3<-subset(S2PhaseInS100E20AGG,x<100|x>120)
 
 S2PhaseInS100E20AGGM3$intervention = S2PhaseInS100E20AGGM3$x > 100
 S2PhaseInS100E20AGGM3$time_after_intervention = ifelse(S2PhaseInS100E20AGGM3$x > 100, S2PhaseInS100E20AGGM3$x - 100, 0)
@@ -3096,7 +3083,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS100E20AGGM4<-subset(S2PhaseInS100E20AGG,x<=100|x>=120)
 S2PhaseInS100E20AGGM4<-rbind(S2PhaseInS100E20AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS100E20AGGM4$intervention = S2PhaseInS100E20AGGM4$x > 120
+S2PhaseInS100E20AGGM4$intervention = S2PhaseInS100E20AGGM4$x > 119
 S2PhaseInS100E20AGGM4$time_after_intervention = ifelse(S2PhaseInS100E20AGGM4$x > 120, S2PhaseInS100E20AGGM4$x - 120, 0)
 S2S100E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS100E20AGGM4)
 summary(S2S100E20M4)
@@ -3137,8 +3124,7 @@ confint(S2S100E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS100E50AGGM3<-subset(S2PhaseInS100E50AGG,x<100|x>=120)
-S2PhaseInS100E50AGGM3$x<-S2PhaseInS100E50AGGM3$x-((S2PhaseInS100E50AGGM3$x)>100)*20
+S2PhaseInS100E50AGGM3<-subset(S2PhaseInS100E50AGG,x<100|x>120)
 
 S2PhaseInS100E50AGGM3$intervention = S2PhaseInS100E50AGGM3$x > 100
 S2PhaseInS100E50AGGM3$time_after_intervention = ifelse(S2PhaseInS100E50AGGM3$x > 100, S2PhaseInS100E50AGGM3$x - 100, 0)
@@ -3152,7 +3138,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS100E50AGGM4<-subset(S2PhaseInS100E50AGG,x<=100|x>=120)
 S2PhaseInS100E50AGGM4<-rbind(S2PhaseInS100E50AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS100E50AGGM4$intervention = S2PhaseInS100E50AGGM4$x > 120
+S2PhaseInS100E50AGGM4$intervention = S2PhaseInS100E50AGGM4$x > 119
 S2PhaseInS100E50AGGM4$time_after_intervention = ifelse(S2PhaseInS100E50AGGM4$x > 120, S2PhaseInS100E50AGGM4$x - 120, 0)
 S2S100E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS100E50AGGM4)
 summary(S2S100E50M4)
@@ -3192,8 +3178,7 @@ confint(S2S100E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS100E100AGGM3<-subset(S2PhaseInS100E100AGG,x<100|x>=120)
-S2PhaseInS100E100AGGM3$x<-S2PhaseInS100E100AGGM3$x-((S2PhaseInS100E100AGGM3$x)>100)*20
+S2PhaseInS100E100AGGM3<-subset(S2PhaseInS100E100AGG,x<100|x>120)
 
 S2PhaseInS100E100AGGM3$intervention = S2PhaseInS100E100AGGM3$x > 100
 S2PhaseInS100E100AGGM3$time_after_intervention = ifelse(S2PhaseInS100E100AGGM3$x > 100, S2PhaseInS100E100AGGM3$x - 100, 0)
@@ -3207,7 +3192,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS100E100AGGM4<-subset(S2PhaseInS100E100AGG,x<=100|x>=120)
 S2PhaseInS100E100AGGM4<-rbind(S2PhaseInS100E100AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS100E100AGGM4$intervention = S2PhaseInS100E100AGGM4$x > 120
+S2PhaseInS100E100AGGM4$intervention = S2PhaseInS100E100AGGM4$x > 119
 S2PhaseInS100E100AGGM4$time_after_intervention = ifelse(S2PhaseInS100E100AGGM4$x > 120, S2PhaseInS100E100AGGM4$x - 120, 0)
 S2S100E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS100E100AGGM4)
 summary(S2S100E100M4)
@@ -3247,8 +3232,7 @@ confint(S2S1000E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS1000E20AGGM3<-subset(S2PhaseInS1000E20AGG,x<100|x>=120)
-S2PhaseInS1000E20AGGM3$x<-S2PhaseInS1000E20AGGM3$x-((S2PhaseInS1000E20AGGM3$x)>100)*20
+S2PhaseInS1000E20AGGM3<-subset(S2PhaseInS1000E20AGG,x<100|x>120)
 
 S2PhaseInS1000E20AGGM3$intervention = S2PhaseInS1000E20AGGM3$x > 100
 S2PhaseInS1000E20AGGM3$time_after_intervention = ifelse(S2PhaseInS1000E20AGGM3$x > 100, S2PhaseInS1000E20AGGM3$x - 100, 0)
@@ -3262,7 +3246,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS1000E20AGGM4<-subset(S2PhaseInS1000E20AGG,x<=100|x>=120)
 S2PhaseInS1000E20AGGM4<-rbind(S2PhaseInS1000E20AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS1000E20AGGM4$intervention = S2PhaseInS1000E20AGGM4$x > 120
+S2PhaseInS1000E20AGGM4$intervention = S2PhaseInS1000E20AGGM4$x > 119
 S2PhaseInS1000E20AGGM4$time_after_intervention = ifelse(S2PhaseInS1000E20AGGM4$x > 120, S2PhaseInS1000E20AGGM4$x - 120, 0)
 S2S1000E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS1000E20AGGM4)
 summary(S2S1000E20M4)
@@ -3302,8 +3286,7 @@ confint(S2S1000E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS1000E50AGGM3<-subset(S2PhaseInS1000E50AGG,x<100|x>=120)
-S2PhaseInS1000E50AGGM3$x<-S2PhaseInS1000E50AGGM3$x-((S2PhaseInS1000E50AGGM3$x)>100)*20
+S2PhaseInS1000E50AGGM3<-subset(S2PhaseInS1000E50AGG,x<100|x>120)
 
 S2PhaseInS1000E50AGGM3$intervention = S2PhaseInS1000E50AGGM3$x > 100
 S2PhaseInS1000E50AGGM3$time_after_intervention = ifelse(S2PhaseInS1000E50AGGM3$x > 100, S2PhaseInS1000E50AGGM3$x - 100, 0)
@@ -3317,7 +3300,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS1000E50AGGM4<-subset(S2PhaseInS1000E50AGG,x<=100|x>=120)
 S2PhaseInS1000E50AGGM4<-rbind(S2PhaseInS1000E50AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS1000E50AGGM4$intervention = S2PhaseInS1000E50AGGM4$x > 120
+S2PhaseInS1000E50AGGM4$intervention = S2PhaseInS1000E50AGGM4$x > 119
 S2PhaseInS1000E50AGGM4$time_after_intervention = ifelse(S2PhaseInS1000E50AGGM4$x > 120, S2PhaseInS1000E50AGGM4$x - 120, 0)
 S2S1000E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS1000E50AGGM4)
 summary(S2S1000E50M4)
@@ -3357,8 +3340,7 @@ confint(S2S1000E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S2PhaseInS1000E100AGGM3<-subset(S2PhaseInS1000E100AGG,x<100|x>=120)
-S2PhaseInS1000E100AGGM3$x<-S2PhaseInS1000E100AGGM3$x-((S2PhaseInS1000E100AGGM3$x)>100)*20
+S2PhaseInS1000E100AGGM3<-subset(S2PhaseInS1000E100AGG,x<100|x>120)
 
 S2PhaseInS1000E100AGGM3$intervention = S2PhaseInS1000E100AGGM3$x > 100
 S2PhaseInS1000E100AGGM3$time_after_intervention = ifelse(S2PhaseInS1000E100AGGM3$x > 100, S2PhaseInS1000E100AGGM3$x - 100, 0)
@@ -3372,7 +3354,7 @@ Model 4: Counterfactual from Before
 S2PhaseInS1000E100AGGM4<-subset(S2PhaseInS1000E100AGG,x<=100|x>=120)
 S2PhaseInS1000E100AGGM4<-rbind(S2PhaseInS1000E100AGGM4,S2CounterfactualBefore)
 
-S2PhaseInS1000E100AGGM4$intervention = S2PhaseInS1000E100AGGM4$x > 120
+S2PhaseInS1000E100AGGM4$intervention = S2PhaseInS1000E100AGGM4$x > 119
 S2PhaseInS1000E100AGGM4$time_after_intervention = ifelse(S2PhaseInS1000E100AGGM4$x > 120, S2PhaseInS1000E100AGGM4$x - 120, 0)
 S2S1000E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S2PhaseInS1000E100AGGM4)
 summary(S2S1000E100M4)
@@ -3414,8 +3396,7 @@ confint(S3S20E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS20E20AGGM3<-subset(S3PhaseInS20E20AGG,x<100|x>=120)
-S3PhaseInS20E20AGGM3$x<-S3PhaseInS20E20AGGM3$x-((S3PhaseInS20E20AGGM3$x)>100)*20
+S3PhaseInS20E20AGGM3<-subset(S3PhaseInS20E20AGG,x<100|x>120)
 
 S3PhaseInS20E20AGGM3$intervention = S3PhaseInS20E20AGGM3$x > 100
 S3PhaseInS20E20AGGM3$time_after_intervention = ifelse(S3PhaseInS20E20AGGM3$x > 100, S3PhaseInS20E20AGGM3$x - 100, 0)
@@ -3429,7 +3410,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS20E20AGGM4<-subset(S3PhaseInS20E20AGG,x<=100|x>=120)
 S3PhaseInS20E20AGGM4<-rbind(S3PhaseInS20E20AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS20E20AGGM4$intervention = S3PhaseInS20E20AGGM4$x > 120
+S3PhaseInS20E20AGGM4$intervention = S3PhaseInS20E20AGGM4$x > 119
 S3PhaseInS20E20AGGM4$time_after_intervention = ifelse(S3PhaseInS20E20AGGM4$x > 120, S3PhaseInS20E20AGGM4$x - 120, 0)
 S3S20E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E20AGGM4)
 summary(S3S20E20M4)
@@ -3469,8 +3450,7 @@ confint(S3S20E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS20E50AGGM3<-subset(S3PhaseInS20E50AGG,x<100|x>=120)
-S3PhaseInS20E50AGGM3$x<-S3PhaseInS20E50AGGM3$x-((S3PhaseInS20E50AGGM3$x)>100)*20
+S3PhaseInS20E50AGGM3<-subset(S3PhaseInS20E50AGG,x<100|x>120)
 
 S3PhaseInS20E50AGGM3$intervention = S3PhaseInS20E50AGGM3$x > 100
 S3PhaseInS20E50AGGM3$time_after_intervention = ifelse(S3PhaseInS20E50AGGM3$x > 100, S3PhaseInS20E50AGGM3$x - 100, 0)
@@ -3483,8 +3463,8 @@ Model 4: Counterfactual from Before
 S3PhaseInS20E50AGGM4<-subset(S3PhaseInS20E50AGG,x<=100|x>=120)
 S3PhaseInS20E50AGGM4<-rbind(S3PhaseInS20E50AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS20E50AGGM4$intervention = S3PhaseInS20E50AGGM4$x > 120
-S3PhaseInS20E50AGGM4$time_after_intervention = ifelse(S3PhaseInS20E50AGGM4$x > 120, S3PhaseInS20E50AGGM4$x - 120, 0)
+S3PhaseInS20E50AGGM4$intervention = S3PhaseInS20E50AGGM4$x > 119
+S3PhaseInS20E50AGGM4$time_after_intervention = ifelse(S3PhaseInS20E50AGGM4$x > 119, S3PhaseInS20E50AGGM4$x - 119, 0)
 S3S20E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E50AGGM4)
 summary(S3S20E50M4)
 confint(S3S20E50M4)
@@ -3524,8 +3504,7 @@ confint(S3S20E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS20E100AGGM3<-subset(S3PhaseInS20E100AGG,x<100|x>=120)
-S3PhaseInS20E100AGGM3$x<-S3PhaseInS20E100AGGM3$x-((S3PhaseInS20E100AGGM3$x)>100)*20
+S3PhaseInS20E100AGGM3<-subset(S3PhaseInS20E100AGG,x<100|x>120)
 
 S3PhaseInS20E100AGGM3$intervention = S3PhaseInS20E100AGGM3$x > 100
 S3PhaseInS20E100AGGM3$time_after_intervention = ifelse(S3PhaseInS20E100AGGM3$x > 100, S3PhaseInS20E100AGGM3$x - 100, 0)
@@ -3539,8 +3518,8 @@ Model 4: Counterfactual from Before
 S3PhaseInS20E100AGGM4<-subset(S3PhaseInS20E100AGG,x<=100|x>=120)
 S3PhaseInS20E100AGGM4<-rbind(S3PhaseInS20E100AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS20E100AGGM4$intervention = S3PhaseInS20E100AGGM4$x > 120
-S3PhaseInS20E100AGGM4$time_after_intervention = ifelse(S3PhaseInS20E100AGGM4$x > 120, S3PhaseInS20E100AGGM4$x - 120, 0)
+S3PhaseInS20E100AGGM4$intervention = S3PhaseInS20E100AGGM4$x > 119
+S3PhaseInS20E100AGGM4$time_after_intervention = ifelse(S3PhaseInS20E100AGGM4$x > 119, S3PhaseInS20E100AGGM4$x - 119, 0)
 S3S20E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E100AGGM4)
 summary(S3S20E100M4)
 confint(S3S20E100M4)
@@ -3579,8 +3558,7 @@ confint(S3S100E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS100E20AGGM3<-subset(S3PhaseInS100E20AGG,x<100|x>=120)
-S3PhaseInS100E20AGGM3$x<-S3PhaseInS100E20AGGM3$x-((S3PhaseInS100E20AGGM3$x)>100)*20
+S3PhaseInS100E20AGGM3<-subset(S3PhaseInS100E20AGG,x<100|x>120)
 
 S3PhaseInS100E20AGGM3$intervention = S3PhaseInS100E20AGGM3$x > 100
 S3PhaseInS100E20AGGM3$time_after_intervention = ifelse(S3PhaseInS100E20AGGM3$x > 100, S3PhaseInS100E20AGGM3$x - 100, 0)
@@ -3594,7 +3572,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS100E20AGGM4<-subset(S3PhaseInS100E20AGG,x<=100|x>=120)
 S3PhaseInS100E20AGGM4<-rbind(S3PhaseInS100E20AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS100E20AGGM4$intervention = S3PhaseInS100E20AGGM4$x > 120
+S3PhaseInS100E20AGGM4$intervention = S3PhaseInS100E20AGGM4$x > 119
 S3PhaseInS100E20AGGM4$time_after_intervention = ifelse(S3PhaseInS100E20AGGM4$x > 120, S3PhaseInS100E20AGGM4$x - 120, 0)
 S3S100E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E20AGGM4)
 summary(S3S100E20M4)
@@ -3634,8 +3612,7 @@ confint(S3S100E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS100E50AGGM3<-subset(S3PhaseInS100E50AGG,x<100|x>=120)
-S3PhaseInS100E50AGGM3$x<-S3PhaseInS100E50AGGM3$x-((S3PhaseInS100E50AGGM3$x)>100)*20
+S3PhaseInS100E50AGGM3<-subset(S3PhaseInS100E50AGG,x<100|x>120)
 
 S3PhaseInS100E50AGGM3$intervention = S3PhaseInS100E50AGGM3$x > 100
 S3PhaseInS100E50AGGM3$time_after_intervention = ifelse(S3PhaseInS100E50AGGM3$x > 100, S3PhaseInS100E50AGGM3$x - 100, 0)
@@ -3649,7 +3626,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS100E50AGGM4<-subset(S3PhaseInS100E50AGG,x<=100|x>=120)
 S3PhaseInS100E50AGGM4<-rbind(S3PhaseInS100E50AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS100E50AGGM4$intervention = S3PhaseInS100E50AGGM4$x > 120
+S3PhaseInS100E50AGGM4$intervention = S3PhaseInS100E50AGGM4$x > 119
 S3PhaseInS100E50AGGM4$time_after_intervention = ifelse(S3PhaseInS100E50AGGM4$x > 120, S3PhaseInS100E50AGGM4$x - 120, 0)
 S3S100E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E50AGGM4)
 summary(S3S100E50M4)
@@ -3689,8 +3666,7 @@ confint(S3S100E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS100E100AGGM3<-subset(S3PhaseInS100E100AGG,x<100|x>=120)
-S3PhaseInS100E100AGGM3$x<-S3PhaseInS100E100AGGM3$x-((S3PhaseInS100E100AGGM3$x)>100)*20
+S3PhaseInS100E100AGGM3<-subset(S3PhaseInS100E100AGG,x<100|x>120)
 
 S3PhaseInS100E100AGGM3$intervention = S3PhaseInS100E100AGGM3$x > 100
 S3PhaseInS100E100AGGM3$time_after_intervention = ifelse(S3PhaseInS100E100AGGM3$x > 100, S3PhaseInS100E100AGGM3$x - 100, 0)
@@ -3704,7 +3680,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS100E100AGGM4<-subset(S3PhaseInS100E100AGG,x<=100|x>=120)
 S3PhaseInS100E100AGGM4<-rbind(S3PhaseInS100E100AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS100E100AGGM4$intervention = S3PhaseInS100E100AGGM4$x > 120
+S3PhaseInS100E100AGGM4$intervention = S3PhaseInS100E100AGGM4$x > 119
 S3PhaseInS100E100AGGM4$time_after_intervention = ifelse(S3PhaseInS100E100AGGM4$x > 120, S3PhaseInS100E100AGGM4$x - 120, 0)
 S3S100E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E100AGGM4)
 summary(S3S100E100M4)
@@ -3744,8 +3720,7 @@ confint(S3S1000E20M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS1000E20AGGM3<-subset(S3PhaseInS1000E20AGG,x<100|x>=120)
-S3PhaseInS1000E20AGGM3$x<-S3PhaseInS1000E20AGGM3$x-((S3PhaseInS1000E20AGGM3$x)>100)*20
+S3PhaseInS1000E20AGGM3<-subset(S3PhaseInS1000E20AGG,x<100|x>120)
 
 S3PhaseInS1000E20AGGM3$intervention = S3PhaseInS1000E20AGGM3$x > 100
 S3PhaseInS1000E20AGGM3$time_after_intervention = ifelse(S3PhaseInS1000E20AGGM3$x > 100, S3PhaseInS1000E20AGGM3$x - 100, 0)
@@ -3759,7 +3734,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS1000E20AGGM4<-subset(S3PhaseInS1000E20AGG,x<=100|x>=120)
 S3PhaseInS1000E20AGGM4<-rbind(S3PhaseInS1000E20AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS1000E20AGGM4$intervention = S3PhaseInS1000E20AGGM4$x > 120
+S3PhaseInS1000E20AGGM4$intervention = S3PhaseInS1000E20AGGM4$x > 119
 S3PhaseInS1000E20AGGM4$time_after_intervention = ifelse(S3PhaseInS1000E20AGGM4$x > 120, S3PhaseInS1000E20AGGM4$x - 120, 0)
 S3S1000E20M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E20AGGM4)
 summary(S3S1000E20M4)
@@ -3800,8 +3775,7 @@ confint(S3S1000E50M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS1000E50AGGM3<-subset(S3PhaseInS1000E50AGG,x<100|x>=120)
-S3PhaseInS1000E50AGGM3$x<-S3PhaseInS1000E50AGGM3$x-((S3PhaseInS1000E50AGGM3$x)>100)*20
+S3PhaseInS1000E50AGGM3<-subset(S3PhaseInS1000E50AGG,x<100|x>120)
 
 S3PhaseInS1000E50AGGM3$intervention = S3PhaseInS1000E50AGGM3$x > 100
 S3PhaseInS1000E50AGGM3$time_after_intervention = ifelse(S3PhaseInS1000E50AGGM3$x > 100, S3PhaseInS1000E50AGGM3$x - 100, 0)
@@ -3815,7 +3789,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS1000E50AGGM4<-subset(S3PhaseInS1000E50AGG,x<=100|x>=120)
 S3PhaseInS1000E50AGGM4<-rbind(S3PhaseInS1000E50AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS1000E50AGGM4$intervention = S3PhaseInS1000E50AGGM4$x > 120
+S3PhaseInS1000E50AGGM4$intervention = S3PhaseInS1000E50AGGM4$x > 119
 S3PhaseInS1000E50AGGM4$time_after_intervention = ifelse(S3PhaseInS1000E50AGGM4$x > 120, S3PhaseInS1000E50AGGM4$x - 120, 0)
 S3S1000E50M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E50AGGM4)
 summary(S3S1000E50M4)
@@ -3855,8 +3829,7 @@ confint(S3S1000E100M2)
 ```
 Model 3: Excluding Phase-in Period
 ```{r}
-S3PhaseInS1000E100AGGM3<-subset(S3PhaseInS1000E100AGG,x<100|x>=120)
-S3PhaseInS1000E100AGGM3$x<-S3PhaseInS1000E100AGGM3$x-((S3PhaseInS1000E100AGGM3$x)>100)*20
+S3PhaseInS1000E100AGGM3<-subset(S3PhaseInS1000E100AGG,x<100|x>120)
 
 S3PhaseInS1000E100AGGM3$intervention = S3PhaseInS1000E100AGGM3$x > 100
 S3PhaseInS1000E100AGGM3$time_after_intervention = ifelse(S3PhaseInS1000E100AGGM3$x > 100, S3PhaseInS1000E100AGGM3$x - 100, 0)
@@ -3870,7 +3843,7 @@ Model 4: Counterfactual from Before
 S3PhaseInS1000E100AGGM4<-subset(S3PhaseInS1000E100AGG,x<=100|x>=120)
 S3PhaseInS1000E100AGGM4<-rbind(S3PhaseInS1000E100AGGM4,S3CounterfactualBefore)
 
-S3PhaseInS1000E100AGGM4$intervention = S3PhaseInS1000E100AGGM4$x > 120
+S3PhaseInS1000E100AGGM4$intervention = S3PhaseInS1000E100AGGM4$x > 119
 S3PhaseInS1000E100AGGM4$time_after_intervention = ifelse(S3PhaseInS1000E100AGGM4$x > 120, S3PhaseInS1000E100AGGM4$x - 120, 0)
 S3S1000E100M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E100AGGM4)
 summary(S3S1000E100M4)
@@ -3888,3 +3861,183 @@ S3S1000E100M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseIn
 summary(S3S1000E100M5)
 confint(S3S1000E100M5)
 ```
+#Plot
+##Senario 1
+Original
+```{r}
+plot(S1PhaseInS20E100AGGM1$x,S1PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Original")
+abline(v=100)
+abline(v=120)
+```
+Abrupt at time 100
+```{r}
+plot(S1PhaseInS20E100AGGM1$x,S1PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 100")
+abline(v=100)
+#abline(v=120)
+lines(S1PhaseInS20E100AGGM1$x[1:100], fitted(S1S20E100M1)[1:100], col="red",lwd=2)
+lines(S1PhaseInS20E100AGGM1$x[101:200], fitted(S1S20E100M1)[101:200], col="red",lwd=2)
+```
+Abrupt at time 120
+```{r}
+plot(S1PhaseInS20E100AGGM2$x,S1PhaseInS20E100AGGM2$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 120")
+#abline(v=100)
+abline(v=120)
+lines(S1PhaseInS20E100AGGM2$x[1:120], fitted(S1S20E100M2)[1:120], col="red",lwd=2)
+lines(S1PhaseInS20E100AGGM2$x[121:200], fitted(S1S20E100M2)[121:200], col="red",lwd=2)
+
+```
+Excluding Phase-in Period
+```{r}
+plot(S1PhaseInS20E100AGG$x,S1PhaseInS20E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Excluding Phase-in Period")
+abline(v=100)
+abline(v=120)
+lines(S1PhaseInS20E100AGGM3$x[1:99], fitted(S1S20E100M3)[1:99], col="red",lwd=2)
+lines(S1PhaseInS20E100AGGM3$x[101:180], fitted(S1S20E100M3)[101:180], col="red",lwd=2)
+```
+Counterfactual from Before
+```{r}
+plot(S1PhaseInS20E100AGGM1$x,S1PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from Before")
+abline(v=100)
+abline(v=120)
+lines(S1PhaseInS20E100AGGM4$x[1:100], fitted(S1S20E100M4)[1:100], col="red",lwd=2)
+lines(S1PhaseInS20E100AGGM4$x[182:200], fitted(S1S20E100M4)[182:200], col="red",lwd=2,lty=3)
+lines(S1PhaseInS20E100AGGM4$x[101:181], fitted(S1S20E100M4)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+Counterfactual from After
+```{r}
+plot(S1PhaseInS20E100AGGM1$x,S1PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from After")
+abline(v=100)
+abline(v=120)
+lines(S1PhaseInS20E100AGGM5$x[1:100], fitted(S1S20E100M5)[1:100], col="red",lwd=2)
+lines(S1PhaseInS20E100AGGM5$x[182:200], fitted(S1S20E100M5)[182:200], col="red",lwd=2,lty=3)
+lines(S1PhaseInS20E100AGGM5$x[101:181], fitted(S1S20E100M5)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+
+##Senario 2
+Original
+```{r}
+plot(S2PhaseInS20E100AGGM1$x,S2PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Original")
+abline(v=100)
+abline(v=120)
+```
+Abrupt at time 100
+```{r}
+plot(S2PhaseInS20E100AGGM1$x,S2PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 100")
+abline(v=100)
+#abline(v=120)
+lines(S2PhaseInS20E100AGGM1$x[1:100], fitted(S2S20E100M1)[1:100], col="red",lwd=2)
+lines(S2PhaseInS20E100AGGM1$x[101:200], fitted(S2S20E100M1)[101:200], col="red",lwd=2)
+```
+Abrupt at time 120
+```{r}
+plot(S2PhaseInS20E100AGGM2$x,S2PhaseInS20E100AGGM2$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 120")
+#abline(v=100)
+abline(v=120)
+lines(S2PhaseInS20E100AGGM2$x[1:120], fitted(S2S20E100M2)[1:120], col="red",lwd=2)
+lines(S2PhaseInS20E100AGGM2$x[121:200], fitted(S2S20E100M2)[121:200], col="red",lwd=2)
+
+```
+Excluding Phase-in Period
+```{r}
+plot(S2PhaseInS20E100AGG$x,S2PhaseInS20E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Excluding Phase-in Period")
+abline(v=100)
+abline(v=120)
+lines(S2PhaseInS20E100AGGM3$x[1:99], fitted(S2S20E100M3)[1:99], col="red",lwd=2)
+lines(S2PhaseInS20E100AGGM3$x[101:180], fitted(S2S20E100M3)[101:180], col="red",lwd=2)
+```
+Counterfactual from Before
+```{r}
+plot(S2PhaseInS20E100AGGM1$x,S2PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from Before")
+abline(v=100)
+abline(v=120)
+lines(S2PhaseInS20E100AGGM4$x[1:100], fitted(S2S20E100M4)[1:100], col="red",lwd=2)
+lines(S2PhaseInS20E100AGGM4$x[182:200], fitted(S2S20E100M4)[182:200], col="red",lwd=2,lty=3)
+lines(S2PhaseInS20E100AGGM4$x[101:181], fitted(S2S20E100M4)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+Counterfactual from After
+```{r}
+plot(S2PhaseInS20E100AGGM1$x,S2PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from After")
+abline(v=100)
+abline(v=120)
+lines(S2PhaseInS20E100AGGM5$x[1:100], fitted(S2S20E100M5)[1:100], col="red",lwd=2)
+lines(S2PhaseInS20E100AGGM5$x[182:200], fitted(S2S20E100M5)[182:200], col="red",lwd=2,lty=3)
+lines(S2PhaseInS20E100AGGM5$x[101:181], fitted(S2S20E100M5)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+
+
+##Senario 3
+Original
+```{r}
+plot(S3PhaseInS20E100AGGM1$x,S3PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Original")
+abline(v=100)
+abline(v=120)
+```
+Abrupt at time 100
+```{r}
+plot(S3PhaseInS20E100AGGM1$x,S3PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 100")
+abline(v=100)
+#abline(v=120)
+lines(S3PhaseInS20E100AGGM1$x[1:100], fitted(S3S20E100M1)[1:100], col="red",lwd=2)
+lines(S3PhaseInS20E100AGGM1$x[101:200], fitted(S3S20E100M1)[101:200], col="red",lwd=2)
+```
+Abrupt at time 120
+```{r}
+plot(S3PhaseInS20E100AGGM2$x,S3PhaseInS20E100AGGM2$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Abrupt at time 120")
+#abline(v=100)
+abline(v=120)
+lines(S3PhaseInS20E100AGGM2$x[1:120], fitted(S3S20E100M2)[1:120], col="red",lwd=2)
+lines(S3PhaseInS20E100AGGM2$x[121:200], fitted(S3S20E100M2)[121:200], col="red",lwd=2)
+
+```
+Excluding Phase-in Period
+```{r}
+plot(S3PhaseInS20E100AGG$x,S3PhaseInS20E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Excluding Phase-in Period")
+abline(v=100)
+abline(v=120)
+lines(S3PhaseInS20E100AGGM3$x[1:99], fitted(S3S20E100M3)[1:99], col="red",lwd=2)
+lines(S3PhaseInS20E100AGGM3$x[101:180], fitted(S3S20E100M3)[101:180], col="red",lwd=2)
+```
+Counterfactual from Before
+```{r}
+plot(S3PhaseInS20E100AGGM1$x,S3PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from Before")
+abline(v=100)
+abline(v=120)
+lines(S3PhaseInS20E100AGGM4$x[1:100], fitted(S3S20E100M4)[1:100], col="red",lwd=2)
+lines(S3PhaseInS20E100AGGM4$x[182:200], fitted(S3S20E100M4)[182:200], col="red",lwd=2,lty=3)
+lines(S3PhaseInS20E100AGGM4$x[101:181], fitted(S3S20E100M4)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+Counterfactual from After
+```{r}
+plot(S3PhaseInS20E100AGGM1$x,S3PhaseInS20E100AGGM1$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Counterfactual from After")
+abline(v=100)
+abline(v=120)
+lines(S3PhaseInS20E100AGGM5$x[1:100], fitted(S3S20E100M5)[1:100], col="red",lwd=2)
+lines(S3PhaseInS20E100AGGM5$x[182:200], fitted(S3S20E100M5)[182:200], col="red",lwd=2,lty=3)
+lines(S3PhaseInS20E100AGGM5$x[101:181], fitted(S3S20E100M5)[101:181], col="red",lwd=2)
+legend(x=0, y=300,lty = c(1,3), legend=c("Observed","Counterfactual"), col=c("red"))
+```
+
+
