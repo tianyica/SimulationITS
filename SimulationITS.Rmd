@@ -1,7 +1,7 @@
 ---
 title: "ITS simulation"
 author: "Tianyi Zheng"
-date: "11/10/2021"
+date: "3/5/2022"
 output:
   word_document: default
   pdf_document: default
@@ -174,20 +174,20 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E20AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
 abline(v=100)
-points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS20E20AGG$x, S1SamplePopAfterS20E20AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
+points(S1SamplePopAfterS20E20AGG$x, S1SamplePopAfterS20E20AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S1SamplePopS100E20AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
 abline(v=100)
-points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS100E20AGG$x, S1SamplePopAfterS100E20AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
+points(S1SamplePopAfterS100E20AGG$x, S1SamplePopAfterS100E20AGG$y)
 ```
 
 Combine before and after for size 1000
@@ -195,10 +195,10 @@ Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E20AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 1000")
 abline(v=100)
-points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS1000E20AGG$x, S1SamplePopAfterS1000E20AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
+points(S1SamplePopAfterS1000E20AGG$x, S1SamplePopAfterS1000E20AGG$y)
 ```
 
 ## Effect Size: 50  
@@ -280,29 +280,29 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E50AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 20")
 abline(v=100)
-points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS20E50AGG$x, S1SamplePopAfterS20E50AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
+points(S1SamplePopAfterS20E50AGG$x, S1SamplePopAfterS20E50AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S1SamplePopS100E50AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
 abline(v=100)
-points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS100E50AGG$x, S1SamplePopAfterS100E50AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
+points(S1SamplePopAfterS100E50AGG$x, S1SamplePopAfterS100E50AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E50AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
 abline(v=100)
-points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS1000E50AGG$x, S1SamplePopAfterS1000E50AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
+points(S1SamplePopAfterS1000E50AGG$x, S1SamplePopAfterS1000E50AGG$y)
 ```
 ## Effect Size: 100  
 Simulate level changed time points after intervention.
@@ -383,29 +383,29 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E100AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
 abline(v=100)
-points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS20E100AGG$x, S1SamplePopAfterS20E100AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
+points(S1SamplePopAfterS20E100AGG$x, S1SamplePopAfterS20E100AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S1SamplePopS100E100AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
 abline(v=100)
-points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS100E100AGG$x, S1SamplePopAfterS100E100AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
+points(S1SamplePopAfterS100E100AGG$x, S1SamplePopAfterS100E100AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E100AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
 abline(v=100)
-points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S1SamplePopAfterS1000E100AGG$x, S1SamplePopAfterS1000E100AGG$y, pch=4, col=4,cex=0.7)
+points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
+points(S1SamplePopAfterS1000E100AGG$x, S1SamplePopAfterS1000E100AGG$y)
 ```
 # Senario 2: with pre-exisiting trend, has level change but not slope change
 Simulate a constant observed outcome before intervention.
@@ -560,20 +560,20 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E20AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
 abline(v=100)
-points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS20E20AGG$x, S2SamplePopAfterS20E20AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
+points(S2SamplePopAfterS20E20AGG$x, S2SamplePopAfterS20E20AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S2SamplePopS100E20AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
 abline(v=100)
-points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS100E20AGG$x, S2SamplePopAfterS100E20AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
+points(S2SamplePopAfterS100E20AGG$x, S2SamplePopAfterS100E20AGG$y)
 ```
 
 Combine before and after for size 1000
@@ -581,10 +581,10 @@ Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E20AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
 abline(v=100)
-points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS1000E20AGG$x, S2SamplePopAfterS1000E20AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
+points(S2SamplePopAfterS1000E20AGG$x, S2SamplePopAfterS1000E20AGG$y)
 ```
 
 ## Effect Size: 50  
@@ -666,29 +666,29 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E50AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
 abline(v=100)
-points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS20E50AGG$x, S2SamplePopAfterS20E50AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
+points(S2SamplePopAfterS20E50AGG$x, S2SamplePopAfterS20E50AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S2SamplePopS100E50AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
 abline(v=100)
-points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS100E50AGG$x, S2SamplePopAfterS100E50AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
+points(S2SamplePopAfterS100E50AGG$x, S2SamplePopAfterS100E50AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E50AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
 abline(v=100)
-points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS1000E50AGG$x, S2SamplePopAfterS1000E50AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
+points(S2SamplePopAfterS1000E50AGG$x, S2SamplePopAfterS1000E50AGG$y)
 ```
 ## Effect Size: 100  
 Simulate level changed time points after intervention.
@@ -769,29 +769,29 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E100AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
 abline(v=100)
-points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS20E100AGG$x, S2SamplePopAfterS20E100AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
+points(S2SamplePopAfterS20E100AGG$x, S2SamplePopAfterS20E100AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S2SamplePopS100E100AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
 abline(v=100)
-points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS100E100AGG$x, S2SamplePopAfterS100E100AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
+points(S2SamplePopAfterS100E100AGG$x, S2SamplePopAfterS100E100AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E100AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
 abline(v=100)
-points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S2SamplePopAfterS1000E100AGG$x, S2SamplePopAfterS1000E100AGG$y, pch=4, col=4,cex=0.7)
+points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
+points(S2SamplePopAfterS1000E100AGG$x, S2SamplePopAfterS1000E100AGG$y)
 ```
 
 # Senario 3: with pre-exisiting trend, has level change and slope change.
@@ -868,11 +868,118 @@ for(i in 1:length(S3TrueOutcomeBefore$y)){
   summarise(y=mean(yindv)))
 plot(S3SamplePopBefore1000AGG$x,S3SamplePopBefore1000AGG$y,ylim=c(0,200))
 ```
+## Effect Size: 0  
+Simulate level changed time points after intervention.
+```{r}
+x=101:200
+S3TrueOutcomeAfterE0 = data.frame(x, y=2*x-81)
+plot(S3TrueOutcomeAfterE0$x,S3TrueOutcomeAfterE0$y)
+S3CounterfactualAfterE0=subset(S3TrueOutcomeAfterE0,x<120&x>100)
+```
+Simulate sample of 20 from the observed population 
+```{r}
+S3SamplePopAfterS20E0=c()
+i=1
+temp=data.frame()
+set.seed(27)
+for(i in 1:length(S3TrueOutcomeAfterE0$y)){
+  x=rep(i+100,20)
+  Individual=1:20
+  yindv=rnorm(20,S3TrueOutcomeAfterE0$y[i],10)
+  temp=data.frame(cbind(x,Individual,yindv))
+  S3SamplePopAfterS20E0=rbind(S3SamplePopAfterS20E0,temp)
+  i=i+1
+}
+#Individual level variation
+plot(S3SamplePopAfterS20E0$x,S3SamplePopAfterS20E0$yindv,ylim=c(0,200))
+#Compute mean at each time point
+(S3SamplePopAfterS20E0AGG<-S3SamplePopAfterS20E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv)))
+plot(S3SamplePopAfterS20E0AGG$x,S3SamplePopAfterS20E0AGG$y,ylim=c(0,200))
+```
+
+Simulate sample of 100 from the observed population 
+```{r}
+S3SamplePopAfterS100E0=c()
+i=1
+temp=data.frame()
+set.seed(28)
+for(i in 1:length(S3TrueOutcomeAfterE0$y)){
+  x=rep(i+100,100)
+  Individual=1:100
+  yindv=rnorm(100,S3TrueOutcomeAfterE0$y[i],10)
+  temp=data.frame(cbind(x,Individual,yindv))
+  S3SamplePopAfterS100E0=rbind(S3SamplePopAfterS100E0,temp)
+  i=i+1
+}
+#Individual level variation
+plot(S3SamplePopAfterS100E0$x,S3SamplePopAfterS100E0$yindv,ylim=c(0,200))
+#Compute mean at each time point
+(S3SamplePopAfterS100E0AGG<-S3SamplePopAfterS100E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv)))
+plot(S3SamplePopAfterS100E0AGG$x,S3SamplePopAfterS100E0AGG$y,ylim=c(0,200))
+```
+Simulate sample of 1000 from the observed population 
+```{r}
+S3SamplePopAfterS1000E0=c()
+i=1
+temp=data.frame()
+set.seed(29)
+for(i in 1:length(S3TrueOutcomeAfterE0$y)){
+  x=rep(i+100,1000)
+  Individual=1:1000
+  yindv=rnorm(1000,S3TrueOutcomeAfterE0$y[i],10)
+  temp=data.frame(cbind(x,Individual,yindv))
+  S3SamplePopAfterS1000E0=rbind(S3SamplePopAfterS1000E0,temp)
+  i=i+1
+}
+#Compute mean at each time point
+(S3SamplePopAfterS1000E0AGG<-S3SamplePopAfterS1000E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv)))
+plot(S3SamplePopAfterS1000E0AGG$x,S3SamplePopAfterS1000E0AGG$y,ylim=c(0,200))
+```
+
+Combine before and after for size 20
+
+```{r}
+S3SamplePopS20E0AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E0AGG)
+plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 20")
+abline(v=100)
+points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
+points(S3SamplePopAfterS20E0AGG$x, S3SamplePopAfterS20E0AGG$y)
+```
+Combine before and after for size 100
+
+```{r}
+S3SamplePopS100E0AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E0AGG)
+plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 100")
+abline(v=100)
+points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
+points(S3SamplePopAfterS100E0AGG$x, S3SamplePopAfterS100E0AGG$y)
+```
+
+Combine before and after for size 1000
+
+```{r}
+S3SamplePopS1000E0AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E0AGG)
+plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 1000")
+abline(v=100)
+points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
+points(S3SamplePopAfterS1000E0AGG$x, S3SamplePopAfterS1000E0AGG$y)
+```
+
+
 ## Effect Size: 20  
 Simulate level changed time points after intervention.
 ```{r}
 x=101:200
-S3TrueOutcomeAfterE20 = data.frame(x, y=2*x-100)
+S3TrueOutcomeAfterE20 = data.frame(x, y=2*x-101)
 plot(S3TrueOutcomeAfterE20$x,S3TrueOutcomeAfterE20$y)
 S3CounterfactualAfterE20=subset(S3TrueOutcomeAfterE20,x<120&x>100)
 ```
@@ -947,20 +1054,20 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E20AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
 abline(v=100)
-points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS20E20AGG$x, S3SamplePopAfterS20E20AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
+points(S3SamplePopAfterS20E20AGG$x, S3SamplePopAfterS20E20AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S3SamplePopS100E20AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
 abline(v=100)
-points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS100E20AGG$x, S3SamplePopAfterS100E20AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
+points(S3SamplePopAfterS100E20AGG$x, S3SamplePopAfterS100E20AGG$y)
 ```
 
 Combine before and after for size 1000
@@ -968,17 +1075,17 @@ Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E20AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 1000")
 abline(v=100)
-points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS1000E20AGG$x, S3SamplePopAfterS1000E20AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
+points(S3SamplePopAfterS1000E20AGG$x, S3SamplePopAfterS1000E20AGG$y)
 ```
 
 ## Effect Size: 50  
 Simulate level changed time points after intervention.
 ```{r}
 x=101:200
-S3TrueOutcomeAfterE50 = data.frame(x, y=2*x-130)
+S3TrueOutcomeAfterE50 = data.frame(x, y=2*x-131)
 plot(S3TrueOutcomeAfterE50$x,S3TrueOutcomeAfterE50$y)
 S3CounterfactualAfterE50=subset(S3TrueOutcomeAfterE50,x<120&x>100)
 ```
@@ -1053,35 +1160,35 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E50AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 20")
 abline(v=100)
-points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS20E50AGG$x, S3SamplePopAfterS20E50AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
+points(S3SamplePopAfterS20E50AGG$x, S3SamplePopAfterS20E50AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S3SamplePopS100E50AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
 abline(v=100)
-points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS100E50AGG$x, S3SamplePopAfterS100E50AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
+points(S3SamplePopAfterS100E50AGG$x, S3SamplePopAfterS100E50AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E50AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
 abline(v=100)
-points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS1000E50AGG$x, S3SamplePopAfterS1000E50AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
+points(S3SamplePopAfterS1000E50AGG$x, S3SamplePopAfterS1000E50AGG$y)
 ```
 ## Effect Size: 100  
 Simulate level changed time points after intervention.
 ```{r}
 x=101:200
-S3TrueOutcomeAfterE100 = data.frame(x, y=2*x-180)
+S3TrueOutcomeAfterE100 = data.frame(x, y=2*x-181)
 plot(S3TrueOutcomeAfterE100$x,S3TrueOutcomeAfterE100$y)
 S3CounterfactualAfterE100=subset(S3TrueOutcomeAfterE100,x<120&x>100)
 ```
@@ -1156,29 +1263,29 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E100AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
 abline(v=100)
-points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS20E100AGG$x, S3SamplePopAfterS20E100AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
+points(S3SamplePopAfterS20E100AGG$x, S3SamplePopAfterS20E100AGG$y)
 ```
 Combine before and after for size 100
 
 ```{r}
 S3SamplePopS100E100AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
 abline(v=100)
-points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS100E100AGG$x, S3SamplePopAfterS100E100AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
+points(S3SamplePopAfterS100E100AGG$x, S3SamplePopAfterS100E100AGG$y)
 ```
 Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E100AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome")
+     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
 abline(v=100)
-points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y, pch=3, col=2,cex=0.7)
-points(S3SamplePopAfterS1000E100AGG$x, S3SamplePopAfterS1000E100AGG$y, pch=4, col=4,cex=0.7)
+points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
+points(S3SamplePopAfterS1000E100AGG$x, S3SamplePopAfterS1000E100AGG$y)
 ```
 # Simulating Phase-in period
 
@@ -1355,8 +1462,7 @@ S1PhaseInS20E50AGG<-S1PhaseInS20E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S1PhaseInS20E50AGG$x,S1PhaseInS20E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 50 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only - Effect Size 50 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 ```
@@ -1399,7 +1505,7 @@ S1PhaseInS100E50AGG<-S1PhaseInS100E50 %>%
   summarise(y=mean(yindv))
 plot(S1PhaseInS100E50AGG$x,S1PhaseInS100E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
      ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 50 and Sample Size 100")
+     - Effect Size 50 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -1442,8 +1548,7 @@ S1PhaseInS1000E50AGG<-S1PhaseInS1000E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S1PhaseInS1000E50AGG$x,S1PhaseInS1000E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 50 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only - Effect Size 50 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -1487,8 +1592,7 @@ S1PhaseInS20E100AGG<-S1PhaseInS20E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S1PhaseInS20E100AGG$x,S1PhaseInS20E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 100 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only - Effect Size 100 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 ```
@@ -1530,8 +1634,7 @@ S1PhaseInS100E100AGG<-S1PhaseInS100E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S1PhaseInS100E100AGG$x,S1PhaseInS100E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 100 and Sample Size 100")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only - Effect Size 100 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -1574,8 +1677,7 @@ S1PhaseInS1000E100AGG<-S1PhaseInS1000E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S1PhaseInS1000E100AGG$x,S1PhaseInS1000E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     without pre-existing trend - Effect Size 100 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only - Effect Size 100 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -1621,8 +1723,8 @@ S2PhaseInS20E20AGG<-S2PhaseInS20E20 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS20E20AGG$x,S2PhaseInS20E20AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only
-     with pre-existing trend - Effect Size 20 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 20 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 
@@ -1668,8 +1770,8 @@ S2PhaseInS100E20AGG<-S2PhaseInS100E20 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS100E20AGG$x,S2PhaseInS100E20AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     with pre-existing trend - Effect Size 20 and Sample Size 100")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 20 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -1713,8 +1815,8 @@ S2PhaseInS1000E20AGG<-S2PhaseInS1000E20 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS1000E20AGG$x,S2PhaseInS1000E20AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change only 
-     with pre-existing trend - Effect Size 20 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 20 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -1758,8 +1860,8 @@ S2PhaseInS20E50AGG<-S2PhaseInS20E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS20E50AGG$x,S2PhaseInS20E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only
-     with pre-existing trend - Effect Size 50 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend -
+     Effect Size 50 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 
@@ -1802,8 +1904,8 @@ S2PhaseInS100E50AGG<-S2PhaseInS100E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS100E50AGG$x,S2PhaseInS100E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     with pre-existing trend - Effect Size 50 and Sample Size 100")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 50 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -1846,8 +1948,8 @@ S2PhaseInS1000E50AGG<-S2PhaseInS1000E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS1000E50AGG$x,S2PhaseInS1000E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change only 
-     with pre-existing trend - Effect Size 50 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 50 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -1891,8 +1993,8 @@ S2PhaseInS20E100AGG<-S2PhaseInS20E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS20E100AGG$x,S2PhaseInS20E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only
-     with pre-existing trend - Effect Size 100 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend - 
+     Effect Size 100 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 
@@ -1935,8 +2037,8 @@ S2PhaseInS100E100AGG<-S2PhaseInS100E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS100E100AGG$x,S2PhaseInS100E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change Only 
-     with pre-existing trend - Effect Size 100 and Sample Size 100")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend -
+     Effect Size 100 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -1979,13 +2081,149 @@ S2PhaseInS1000E100AGG<-S2PhaseInS1000E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S2PhaseInS1000E100AGG$x,S2PhaseInS1000E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level Change only 
-     with pre-existing trend - Effect Size 100 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level Change and Pre-existing Trend -
+     Effect Size 100 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
 
 # Senario 3
+
+## Effect Size: 0 
+
+### Sample size: 20
+```{r}
+S3SamplePopBefore20$Int<-FALSE
+S3SamplePopAfterS20E0Delay<-subset(S3SamplePopAfterS20E0,x>=120)
+S3SamplePopAfterS20E0Delay$Int<-TRUE
+
+# Phase-in period
+i=1
+temp1=data.frame()
+temp2=data.frame()
+set.seed(54)
+p=1:19
+ss=20
+for(i in p){
+  x=rep(i+100,ss-i)
+  Individual=head(1:ss,ss-i)
+  yindv=rnorm(ss-i,S3CounterfactualBefore$y[i],10)
+  Int=FALSE
+  temp1=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS20E0Delay=rbind(S3SamplePopAfterS20E0Delay,temp1)
+  
+  x=rep(i+100,i)
+  Individual=tail(1:ss,i)
+  yindv=rnorm(i,S3CounterfactualAfterE0$y[i],10)
+  Int=TRUE
+  temp2=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS20E0Delay=rbind(S3SamplePopAfterS20E0Delay,temp2)
+  i=i+1
+}
+
+S3PhaseInS20E0=rbind(S3SamplePopBefore20,S3SamplePopAfterS20E0Delay)
+#Individual level variation
+plot(S3PhaseInS20E0$x,S3PhaseInS20E0$yindv,ylim=c(0,300))
+#Compute mean at each time point
+S3PhaseInS20E0AGG<-S3PhaseInS20E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv))
+plot(S3PhaseInS20E0AGG$x,S3PhaseInS20E0AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with pre-existing trend -
+     Effect Size 0 and Sample Size 20")
+abline(v=100)
+abline(v=120)
+```
+### Sample size: 100
+```{r}
+S3SamplePopBefore100$Int<-FALSE
+S3SamplePopAfterS100E0Delay<-subset(S3SamplePopAfterS100E0,x>=120)
+S3SamplePopAfterS100E0Delay$Int<-TRUE
+
+# Phase-in period
+i=1
+temp1=data.frame()
+temp2=data.frame()
+set.seed(55)
+p=1:19
+ss=100
+step=ss/20
+for(i in p){
+  x=rep(i+100,ss-i*step)
+  Individual=head(1:ss,ss-i*step)
+  yindv=rnorm(ss-i*step,S3CounterfactualBefore$y[i],10)
+  Int=FALSE
+  temp1=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS100E0Delay=rbind(S3SamplePopAfterS100E0Delay,temp1)
+  
+  x=rep(i+100,i*step)
+  Individual=tail(1:ss,i*step)
+  yindv=rnorm(i,S3CounterfactualAfterE0$y[i],10)
+  Int=TRUE
+  temp2=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS100E0Delay=rbind(S3SamplePopAfterS100E0Delay,temp2)
+  i=i+1
+}
+
+S3PhaseInS100E0=rbind(S3SamplePopBefore100,S3SamplePopAfterS100E0Delay)
+#Individual level variation
+plot(S3PhaseInS100E0$x,S3PhaseInS100E0$yindv,ylim=c(0,300))
+#Compute mean at each time point
+S3PhaseInS100E0AGG<-S3PhaseInS100E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv))
+plot(S3PhaseInS100E0AGG$x,S3PhaseInS100E0AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 0 and Sample Size 100")
+abline(v=100)
+abline(v=120)
+```
+
+### Sample size: 1000
+```{r}
+S3SamplePopBefore1000$Int<-FALSE
+S3SamplePopAfterS1000E0Delay<-subset(S3SamplePopAfterS1000E0,x>=120)
+S3SamplePopAfterS1000E0Delay$Int<-TRUE
+
+# Phase-in period
+i=1
+temp1=data.frame()
+temp2=data.frame()
+set.seed(56)
+p=1:19
+ss=1000
+step=ss/20
+for(i in p){
+  x=rep(i+100,ss-i*step)
+  Individual=head(1:ss,ss-i*step)
+  yindv=rnorm(ss-i*step,S3CounterfactualBefore$y[i],10)
+  Int=FALSE
+  temp1=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS1000E0Delay=rbind(S3SamplePopAfterS1000E0Delay,temp1)
+  
+  x=rep(i+100,i*step)
+  Individual=tail(1:ss,i*step)
+  yindv=rnorm(i,S3CounterfactualAfterE0$y[i],10)
+  Int=TRUE
+  temp2=data.frame(cbind(x,Individual,yindv,Int))
+  S3SamplePopAfterS1000E0Delay=rbind(S3SamplePopAfterS1000E0Delay,temp2)
+  i=i+1
+}
+
+S3PhaseInS1000E0=rbind(S3SamplePopBefore1000,S3SamplePopAfterS1000E0Delay)
+#Individual level variation
+plot(S3PhaseInS1000E0$x,S3PhaseInS1000E0$yindv,ylim=c(0,300))
+#Compute mean at each time point
+S3PhaseInS1000E0AGG<-S3PhaseInS1000E0 %>% 
+  group_by(x) %>% 
+  summarise(y=mean(yindv))
+plot(S3PhaseInS1000E0AGG$x,S3PhaseInS1000E0AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 0 and Sample Size 1000")
+abline(v=100)
+abline(v=120)
+```
+
 ## Effect Size: 20 
 
 ### Sample size: 20
@@ -2027,7 +2265,8 @@ S3PhaseInS20E20AGG<-S3PhaseInS20E20 %>%
   summarise(y=mean(yindv))
 plot(S3PhaseInS20E20AGG$x,S3PhaseInS20E20AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
      ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 20 and Sample Size 20")
+     with pre-existing trend -
+     Effect Size 20 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 ```
@@ -2064,14 +2303,14 @@ for(i in p){
 
 S3PhaseInS100E20=rbind(S3SamplePopBefore100,S3SamplePopAfterS100E20Delay)
 #Individual level variation
-plot(S3PhaseInS100E20$x,S3PhaseInS100E20$yindv,ylim=c(0,200))
+plot(S3PhaseInS100E20$x,S3PhaseInS100E20$yindv,ylim=c(0,300))
 #Compute mean at each time point
 S3PhaseInS100E20AGG<-S3PhaseInS100E20 %>% 
   group_by(x) %>% 
   summarise(y=mean(yindv))
-plot(S3PhaseInS100E20AGG$x,S3PhaseInS100E20AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 20 and Sample Size 100")
+plot(S3PhaseInS100E20AGG$x,S3PhaseInS100E20AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 20 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -2115,8 +2354,8 @@ S3PhaseInS1000E20AGG<-S3PhaseInS1000E20 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S3PhaseInS1000E20AGG$x,S3PhaseInS1000E20AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 20 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 20 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -2160,8 +2399,8 @@ S3PhaseInS20E50AGG<-S3PhaseInS20E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S3PhaseInS20E50AGG$x,S3PhaseInS20E50AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 50 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 50 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 ```
@@ -2202,9 +2441,9 @@ plot(S3PhaseInS100E50$x,S3PhaseInS100E50$yindv,ylim=c(0,200))
 S3PhaseInS100E50AGG<-S3PhaseInS100E50 %>% 
   group_by(x) %>% 
   summarise(y=mean(yindv))
-plot(S3PhaseInS100E50AGG$x,S3PhaseInS100E50AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 50 and Sample Size 100")
+plot(S3PhaseInS100E50AGG$x,S3PhaseInS100E50AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 50 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -2247,8 +2486,8 @@ S3PhaseInS1000E50AGG<-S3PhaseInS1000E50 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S3PhaseInS1000E50AGG$x,S3PhaseInS1000E50AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 50 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 50 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -2292,8 +2531,8 @@ S3PhaseInS20E100AGG<-S3PhaseInS20E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S3PhaseInS20E100AGG$x,S3PhaseInS20E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 100 and Sample Size 20")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 100 and Sample Size 20")
 abline(v=100)
 abline(v=120)
 ```
@@ -2334,9 +2573,9 @@ plot(S3PhaseInS100E100$x,S3PhaseInS100E100$yindv,ylim=c(0,200))
 S3PhaseInS100E100AGG<-S3PhaseInS100E100 %>% 
   group_by(x) %>% 
   summarise(y=mean(yindv))
-plot(S3PhaseInS100E100AGG$x,S3PhaseInS100E100AGG$y,ylim=c(0,200),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 100 and Sample Size 100")
+plot(S3PhaseInS100E100AGG$x,S3PhaseInS100E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 100 and Sample Size 100")
 abline(v=100)
 abline(v=120)
 ```
@@ -2379,8 +2618,8 @@ S3PhaseInS1000E100AGG<-S3PhaseInS1000E100 %>%
   group_by(x) %>% 
   summarise(y=mean(yindv))
 plot(S3PhaseInS1000E100AGG$x,S3PhaseInS1000E100AGG$y,ylim=c(0,300),xaxp=c(0,200,10),
-     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change  
-     with pre-existing trend - Effect Size 100 and Sample Size 1000")
+     ylab = "Mean of Outcome",xlab="Time",main = "Level and Slope Change with Pre-existing Trend - 
+     Effect Size 100 and Sample Size 1000")
 abline(v=100)
 abline(v=120)
 ```
@@ -3374,6 +3613,60 @@ confint(S2S1000E100M5)
 ```
 
 # Senario 3
+Sample size 20 Effect Size 0 
+Model 1: Abrupt at time 100
+```{r}
+S3PhaseInS20E0AGGM1<-S3PhaseInS20E0AGG
+S3PhaseInS20E0AGGM1$intervention = S3PhaseInS20E0AGGM1$x > 100
+S3PhaseInS20E0AGGM1$time_after_intervention = ifelse(S3PhaseInS20E0AGGM1$x > 100, S3PhaseInS20E0AGGM1$x - 100, 0)
+S3S20E0M1<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E0AGGM1)
+summary(S3S20E0M1)
+confint(S3S20E0M1)
+```
+Model 2: Abrupt at time 120
+```{r}
+S3PhaseInS20E0AGGM2<-S3PhaseInS20E0AGG
+S3PhaseInS20E0AGGM2$intervention = S3PhaseInS20E0AGGM2$x > 120
+S3PhaseInS20E0AGGM2$time_after_intervention = ifelse(S3PhaseInS20E0AGGM2$x > 120, S3PhaseInS20E0AGGM2$x - 120, 0)
+S3S20E0M2<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E0AGGM2)
+summary(S3S20E0M2)
+confint(S3S20E0M2)
+```
+Model 3: Excluding Phase-in Period
+```{r}
+S3PhaseInS20E0AGGM3<-subset(S3PhaseInS20E0AGG,x<100|x>=120)
+
+S3PhaseInS20E0AGGM3$intervention = S3PhaseInS20E0AGGM3$x > 100
+S3PhaseInS20E0AGGM3$time_after_intervention = ifelse(S3PhaseInS20E0AGGM3$x > 100, S3PhaseInS20E0AGGM3$x - 100, 0)
+S3S20E0M3<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E0AGGM3)
+summary(S3S20E0M3)
+confint(S3S20E0M3)
+```
+Model 4: Counterfactual from Before
+
+```{r}
+S3PhaseInS20E0AGGM4<-subset(S3PhaseInS20E0AGG,x<=100|x>=120)
+S3PhaseInS20E0AGGM4<-rbind(S3PhaseInS20E0AGGM4,S3CounterfactualBefore)
+
+S3PhaseInS20E0AGGM4$intervention = S3PhaseInS20E0AGGM4$x > 119
+S3PhaseInS20E0AGGM4$time_after_intervention = ifelse(S3PhaseInS20E0AGGM4$x > 120, S3PhaseInS20E0AGGM4$x - 120, 0)
+S3S20E0M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E0AGGM4)
+summary(S3S20E0M4)
+confint(S3S20E0M4)
+```
+Model 5: Counterfactual from After
+
+```{r}
+S3PhaseInS20E0AGGM5<-subset(S3PhaseInS20E0AGG,x<100|x>120)
+S3PhaseInS20E0AGGM5<-rbind(S3PhaseInS20E0AGGM5,S3CounterfactualAfterE0)
+
+S3PhaseInS20E0AGGM5$intervention = S3PhaseInS20E0AGGM5$x > 100
+S3PhaseInS20E0AGGM5$time_after_intervention = ifelse(S3PhaseInS20E0AGGM5$x > 100, S3PhaseInS20E0AGGM5$x - 100, 0)
+S3S20E0M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS20E0AGGM5)
+summary(S3S20E0M5)
+confint(S3S20E0M5)
+```
+
 
 Sample size 20 Effect Size 20 
 Model 1: Abrupt at time 100
@@ -3536,6 +3829,60 @@ S3S20E100M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS2
 summary(S3S20E100M5)
 confint(S3S20E100M5)
 ```
+Sample size 100 Effect Size 0 
+Model 1: Abrupt at time 100
+```{r}
+S3PhaseInS100E0AGGM1<-S3PhaseInS100E0AGG
+S3PhaseInS100E0AGGM1$intervention = S3PhaseInS100E0AGGM1$x > 100
+S3PhaseInS100E0AGGM1$time_after_intervention = ifelse(S3PhaseInS100E0AGGM1$x > 100, S3PhaseInS100E0AGGM1$x - 100, 0)
+S3S100E0M1<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E0AGGM1)
+summary(S3S100E0M1)
+confint(S3S100E0M1)
+```
+Model 2: Abrupt at time 120
+```{r}
+S3PhaseInS100E0AGGM2<-S3PhaseInS100E0AGG
+S3PhaseInS100E0AGGM2$intervention = S3PhaseInS100E0AGGM2$x > 120
+S3PhaseInS100E0AGGM2$time_after_intervention = ifelse(S3PhaseInS100E0AGGM2$x > 120, S3PhaseInS100E0AGGM2$x - 120, 0)
+S3S100E0M2<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E0AGGM2)
+summary(S3S100E0M2)
+confint(S3S100E0M2)
+```
+Model 3: Excluding Phase-in Period
+```{r}
+S3PhaseInS100E0AGGM3<-subset(S3PhaseInS100E0AGG,x<100|x>120)
+
+S3PhaseInS100E0AGGM3$intervention = S3PhaseInS100E0AGGM3$x > 100
+S3PhaseInS100E0AGGM3$time_after_intervention = ifelse(S3PhaseInS100E0AGGM3$x > 100, S3PhaseInS100E0AGGM3$x - 100, 0)
+S3S100E0M3<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E0AGGM3)
+summary(S3S100E0M3)
+confint(S3S100E0M3)
+```
+Model 4: Counterfactual from Before
+
+```{r}
+S3PhaseInS100E0AGGM4<-subset(S3PhaseInS100E0AGG,x<=100|x>=120)
+S3PhaseInS100E0AGGM4<-rbind(S3PhaseInS100E0AGGM4,S3CounterfactualBefore)
+
+S3PhaseInS100E0AGGM4$intervention = S3PhaseInS100E0AGGM4$x > 119
+S3PhaseInS100E0AGGM4$time_after_intervention = ifelse(S3PhaseInS100E0AGGM4$x > 120, S3PhaseInS100E0AGGM4$x - 120, 0)
+S3S100E0M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E0AGGM4)
+summary(S3S100E0M4)
+confint(S3S100E0M4)
+```
+Model 5: Counterfactual from After
+
+```{r}
+S3PhaseInS100E0AGGM5<-subset(S3PhaseInS100E0AGG,x<100|x>120)
+S3PhaseInS100E0AGGM5<-rbind(S3PhaseInS100E0AGGM5,S3CounterfactualAfterE0)
+
+S3PhaseInS100E0AGGM5$intervention = S3PhaseInS100E0AGGM5$x > 100
+S3PhaseInS100E0AGGM5$time_after_intervention = ifelse(S3PhaseInS100E0AGGM5$x > 100, S3PhaseInS100E0AGGM5$x - 100, 0)
+S3S100E0M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS100E0AGGM5)
+summary(S3S100E0M5)
+confint(S3S100E0M5)
+```
+
 
 Sample size 100 Effect Size 20 
 Model 1: Abrupt at time 100
@@ -3698,6 +4045,61 @@ S3S100E100M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS
 summary(S3S100E100M5)
 confint(S3S100E100M5)
 ```
+
+Sample size 1000 Effect Size 0 
+Model 1: Abrupt at time 100
+```{r}
+S3PhaseInS1000E0AGGM1<-S3PhaseInS1000E0AGG
+S3PhaseInS1000E0AGGM1$intervention = S3PhaseInS1000E0AGGM1$x > 100
+S3PhaseInS1000E0AGGM1$time_after_intervention = ifelse(S3PhaseInS1000E0AGGM1$x > 100, S3PhaseInS1000E0AGGM1$x - 100, 0)
+S3S1000E0M1<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E0AGGM1)
+summary(S3S1000E0M1)
+confint(S3S1000E0M1)
+```
+Model 2: Abrupt at time 120
+```{r}
+S3PhaseInS1000E0AGGM2<-S3PhaseInS1000E0AGG
+S3PhaseInS1000E0AGGM2$intervention = S3PhaseInS1000E0AGGM2$x > 120
+S3PhaseInS1000E0AGGM2$time_after_intervention = ifelse(S3PhaseInS1000E0AGGM2$x > 120, S3PhaseInS1000E0AGGM2$x - 120, 0)
+S3S1000E0M2<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E0AGGM2)
+summary(S3S1000E0M2)
+confint(S3S1000E0M2)
+```
+Model 3: Excluding Phase-in Period
+```{r}
+S3PhaseInS1000E0AGGM3<-subset(S3PhaseInS1000E0AGG,x<100|x>120)
+
+S3PhaseInS1000E0AGGM3$intervention = S3PhaseInS1000E0AGGM3$x > 100
+S3PhaseInS1000E0AGGM3$time_after_intervention = ifelse(S3PhaseInS1000E0AGGM3$x > 100, S3PhaseInS1000E0AGGM3$x - 100, 0)
+S3S1000E0M3<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E0AGGM3)
+summary(S3S1000E0M3)
+confint(S3S1000E0M3)
+```
+Model 4: Counterfactual from Before
+
+```{r}
+S3PhaseInS1000E0AGGM4<-subset(S3PhaseInS1000E0AGG,x<=100|x>=120)
+S3PhaseInS1000E0AGGM4<-rbind(S3PhaseInS1000E0AGGM4,S3CounterfactualBefore)
+
+S3PhaseInS1000E0AGGM4$intervention = S3PhaseInS1000E0AGGM4$x > 119
+S3PhaseInS1000E0AGGM4$time_after_intervention = ifelse(S3PhaseInS1000E0AGGM4$x > 120, S3PhaseInS1000E0AGGM4$x - 120, 0)
+S3S1000E0M4<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E0AGGM4)
+summary(S3S1000E0M4)
+confint(S3S1000E0M4)
+```
+Model 5: Counterfactual from After
+
+```{r}
+S3PhaseInS1000E0AGGM5<-subset(S3PhaseInS1000E0AGG,x<=100|x>=120)
+S3PhaseInS1000E0AGGM5<-rbind(S3PhaseInS1000E0AGGM5,S3CounterfactualAfterE0)
+
+S3PhaseInS1000E0AGGM5$intervention = S3PhaseInS1000E0AGGM5$x > 100
+S3PhaseInS1000E0AGGM5$time_after_intervention = ifelse(S3PhaseInS1000E0AGGM5$x > 100, S3PhaseInS1000E0AGGM5$x - 100, 0)
+S3S1000E0M5<-lm(y ~ x + intervention + time_after_intervention, data=S3PhaseInS1000E0AGGM5)
+summary(S3S1000E0M5)
+confint(S3S1000E0M5)
+```
+
 
 Sample size 1000 Effect Size 20 
 Model 1: Abrupt at time 100
