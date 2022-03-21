@@ -174,7 +174,7 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E20AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 20 and Sample Size 20")
 abline(v=100)
 points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
 points(S1SamplePopAfterS20E20AGG$x, S1SamplePopAfterS20E20AGG$y)
@@ -184,7 +184,7 @@ Combine before and after for size 100
 ```{r}
 S1SamplePopS100E20AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 20 and Sample Size 100")
 abline(v=100)
 points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
 points(S1SamplePopAfterS100E20AGG$x, S1SamplePopAfterS100E20AGG$y)
@@ -195,7 +195,7 @@ Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E20AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 20 and Sample Size 1000")
 abline(v=100)
 points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
 points(S1SamplePopAfterS1000E20AGG$x, S1SamplePopAfterS1000E20AGG$y)
@@ -280,7 +280,7 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E50AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 50 and Sample Size 20")
 abline(v=100)
 points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
 points(S1SamplePopAfterS20E50AGG$x, S1SamplePopAfterS20E50AGG$y)
@@ -290,7 +290,7 @@ Combine before and after for size 100
 ```{r}
 S1SamplePopS100E50AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 50 and Sample Size 100")
 abline(v=100)
 points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
 points(S1SamplePopAfterS100E50AGG$x, S1SamplePopAfterS100E50AGG$y)
@@ -299,7 +299,7 @@ Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E50AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 50 and Sample Size 1000")
 abline(v=100)
 points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
 points(S1SamplePopAfterS1000E50AGG$x, S1SamplePopAfterS1000E50AGG$y)
@@ -383,7 +383,7 @@ Combine before and after for size 20
 ```{r}
 S1SamplePopS20E100AGG<-rbind(S1SamplePopBefore20AGG,S1SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 100 and Sample Size 20")
 abline(v=100)
 points(S1SamplePopBefore20AGG$x, S1SamplePopBefore20AGG$y)
 points(S1SamplePopAfterS20E100AGG$x, S1SamplePopAfterS20E100AGG$y)
@@ -393,7 +393,7 @@ Combine before and after for size 100
 ```{r}
 S1SamplePopS100E100AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 100 and Sample Size 100")
 abline(v=100)
 points(S1SamplePopBefore100AGG$x, S1SamplePopBefore100AGG$y)
 points(S1SamplePopAfterS100E100AGG$x, S1SamplePopAfterS100E100AGG$y)
@@ -402,7 +402,7 @@ Combine before and after for size 1000
 ```{r}
 S1SamplePopS1000E100AGG<-rbind(S1SamplePopBefore100AGG,S1SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-1 - Effect Size 100 and Sample Size 1000")
 abline(v=100)
 points(S1SamplePopBefore1000AGG$x, S1SamplePopBefore1000AGG$y)
 points(S1SamplePopAfterS1000E100AGG$x, S1SamplePopAfterS1000E100AGG$y)
@@ -560,7 +560,7 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E20AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 20 and Sample Size 20")
 abline(v=100)
 points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
 points(S2SamplePopAfterS20E20AGG$x, S2SamplePopAfterS20E20AGG$y)
@@ -570,7 +570,7 @@ Combine before and after for size 100
 ```{r}
 S2SamplePopS100E20AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 20 and Sample Size 100")
 abline(v=100)
 points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
 points(S2SamplePopAfterS100E20AGG$x, S2SamplePopAfterS100E20AGG$y)
@@ -581,7 +581,7 @@ Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E20AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 20 and Sample Size 100")
 abline(v=100)
 points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
 points(S2SamplePopAfterS1000E20AGG$x, S2SamplePopAfterS1000E20AGG$y)
@@ -666,7 +666,7 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E50AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 50 and Sample Size 20")
 abline(v=100)
 points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
 points(S2SamplePopAfterS20E50AGG$x, S2SamplePopAfterS20E50AGG$y)
@@ -676,7 +676,7 @@ Combine before and after for size 100
 ```{r}
 S2SamplePopS100E50AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 50 and Sample Size 100")
 abline(v=100)
 points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
 points(S2SamplePopAfterS100E50AGG$x, S2SamplePopAfterS100E50AGG$y)
@@ -685,7 +685,7 @@ Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E50AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 50 and Sample Size 1000")
 abline(v=100)
 points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
 points(S2SamplePopAfterS1000E50AGG$x, S2SamplePopAfterS1000E50AGG$y)
@@ -769,7 +769,7 @@ Combine before and after for size 20
 ```{r}
 S2SamplePopS20E100AGG<-rbind(S2SamplePopBefore20AGG,S2SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 100 and Sample Size 20")
 abline(v=100)
 points(S2SamplePopBefore20AGG$x, S2SamplePopBefore20AGG$y)
 points(S2SamplePopAfterS20E100AGG$x, S2SamplePopAfterS20E100AGG$y)
@@ -779,7 +779,7 @@ Combine before and after for size 100
 ```{r}
 S2SamplePopS100E100AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 100 and Sample Size 100")
 abline(v=100)
 points(S2SamplePopBefore100AGG$x, S2SamplePopBefore100AGG$y)
 points(S2SamplePopAfterS100E100AGG$x, S2SamplePopAfterS100E100AGG$y)
@@ -788,7 +788,7 @@ Combine before and after for size 1000
 ```{r}
 S2SamplePopS1000E100AGG<-rbind(S2SamplePopBefore100AGG,S2SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-2 - Effect Size 100 and Sample Size 1000")
 abline(v=100)
 points(S2SamplePopBefore1000AGG$x, S2SamplePopBefore1000AGG$y)
 points(S2SamplePopAfterS1000E100AGG$x, S2SamplePopAfterS1000E100AGG$y)
@@ -947,7 +947,7 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E0AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E0AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 0 and Sample Size 20")
 abline(v=100)
 points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
 points(S3SamplePopAfterS20E0AGG$x, S3SamplePopAfterS20E0AGG$y)
@@ -957,7 +957,7 @@ Combine before and after for size 100
 ```{r}
 S3SamplePopS100E0AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E0AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 0 and Sample Size 100")
 abline(v=100)
 points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
 points(S3SamplePopAfterS100E0AGG$x, S3SamplePopAfterS100E0AGG$y)
@@ -968,7 +968,7 @@ Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E0AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E0AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 0 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 0 and Sample Size 1000")
 abline(v=100)
 points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
 points(S3SamplePopAfterS1000E0AGG$x, S3SamplePopAfterS1000E0AGG$y)
@@ -1054,7 +1054,7 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E20AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 20 and Sample Size 20")
 abline(v=100)
 points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
 points(S3SamplePopAfterS20E20AGG$x, S3SamplePopAfterS20E20AGG$y)
@@ -1064,7 +1064,7 @@ Combine before and after for size 100
 ```{r}
 S3SamplePopS100E20AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 20 and Sample Size 100")
 abline(v=100)
 points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
 points(S3SamplePopAfterS100E20AGG$x, S3SamplePopAfterS100E20AGG$y)
@@ -1075,7 +1075,7 @@ Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E20AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E20AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 20 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 20 and Sample Size 1000")
 abline(v=100)
 points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
 points(S3SamplePopAfterS1000E20AGG$x, S3SamplePopAfterS1000E20AGG$y)
@@ -1160,7 +1160,7 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E50AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 50 and Sample Size 20")
 abline(v=100)
 points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
 points(S3SamplePopAfterS20E50AGG$x, S3SamplePopAfterS20E50AGG$y)
@@ -1170,7 +1170,7 @@ Combine before and after for size 100
 ```{r}
 S3SamplePopS100E50AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 50 and Sample Size 100")
 abline(v=100)
 points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
 points(S3SamplePopAfterS100E50AGG$x, S3SamplePopAfterS100E50AGG$y)
@@ -1179,7 +1179,7 @@ Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E50AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E50AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,300), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 50 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 50 and Sample Size 1000")
 abline(v=100)
 points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
 points(S3SamplePopAfterS1000E50AGG$x, S3SamplePopAfterS1000E50AGG$y)
@@ -1263,7 +1263,7 @@ Combine before and after for size 20
 ```{r}
 S3SamplePopS20E100AGG<-rbind(S3SamplePopBefore20AGG,S3SamplePopAfterS20E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 20")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 100 and Sample Size 20")
 abline(v=100)
 points(S3SamplePopBefore20AGG$x, S3SamplePopBefore20AGG$y)
 points(S3SamplePopAfterS20E100AGG$x, S3SamplePopAfterS20E100AGG$y)
@@ -1273,7 +1273,7 @@ Combine before and after for size 100
 ```{r}
 S3SamplePopS100E100AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS100E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 100")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 100 and Sample Size 100")
 abline(v=100)
 points(S3SamplePopBefore100AGG$x, S3SamplePopBefore100AGG$y)
 points(S3SamplePopAfterS100E100AGG$x, S3SamplePopAfterS100E100AGG$y)
@@ -1282,7 +1282,7 @@ Combine before and after for size 1000
 ```{r}
 S3SamplePopS1000E100AGG<-rbind(S3SamplePopBefore100AGG,S3SamplePopAfterS1000E100AGG)
 plot(x=1:200, y=rep(1,200), type="n", ylim=c(0,200), 
-     xlab="time", ylab="mean of outcome",main = "Original - Effect Size 100 and Sample Size 1000")
+     xlab="time", ylab="mean of outcome",main = "Scenario-3 - Effect Size 100 and Sample Size 1000")
 abline(v=100)
 points(S3SamplePopBefore1000AGG$x, S3SamplePopBefore1000AGG$y)
 points(S3SamplePopAfterS1000E100AGG$x, S3SamplePopAfterS1000E100AGG$y)
